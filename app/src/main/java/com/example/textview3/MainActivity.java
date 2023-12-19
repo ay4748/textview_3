@@ -2,6 +2,7 @@ package com.example.textview3;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -23,9 +24,11 @@ public class MainActivity extends AppCompatActivity {
     public void dodge(View view) {
         counter +=1;
         tV.setText("This is a click number:"+counter);
-        if (counter==7)
+        tV.setTextColor(Color.RED);
+        if (counter==6)
         {
             tV.setText("Enough to click. Go to new start!");
+            counter=0;
         }
     }
 }
