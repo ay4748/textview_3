@@ -23,11 +23,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void dodge(View view) {
         counter +=1;
-        tV.setText("This is a click number:"+counter);
-        tV.setTextColor(Color.RED);
+        tV.setText("This is a click number: "+counter);
+        tV.setTextColor(Color.BLUE);
         if (counter==6)
         {
             tV.setText("Enough to click. Go to new start!");
+            tV.setTextColor(Color.RED);
             counter=0;
         }
     }
